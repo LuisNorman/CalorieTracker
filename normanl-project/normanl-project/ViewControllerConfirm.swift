@@ -19,6 +19,13 @@ class ViewControllerConfirm: UIViewController {
     var height : String?
     var weight : String?
     
+    var goal : String?
+    
+    @IBOutlet weak var recommendation1: UIButton!
+    @IBOutlet weak var recommendation2: UIButton!
+    @IBOutlet weak var recommendation3: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,13 +33,27 @@ class ViewControllerConfirm: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        nameLabel.text = "Name: \(name ?? "Unknown")"
-        ageLabel.text = "Age: \(age ?? "Unknown")"
-        heightLabel.text = "Height: \(height ?? "Unknown")"
-        weightLabel.text = "Weight: \(weight ?? "Unknown")"
+        
+        if (nameLabel != nil) { // Sharing this VC  with another 
+            nameLabel.text = "Name: \(name ?? "Unknown")"
+            ageLabel.text = "Age: \(age ?? "Unknown")"
+            heightLabel.text = "Height: \(height ?? "Unknown")"
+            weightLabel.text = "Weight: \(weight ?? "Unknown")"
+        }
     }
     
+    @IBAction func recommendationSelected(_ sender: UIButton) {
+        goal = String((sender.currentTitle?.suffix(4))!)
+    }
     
+
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let confirmGoalViewController = segue.destination as? ViewControllerConfirmGoal {
+            confirmGoalViewController.goal = goal
+            confirmGoalViewController.name = name
+        }
+    }
 
     
     /*

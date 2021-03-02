@@ -222,7 +222,7 @@
                                     <color key="titleColor" red="0.61568627450000002" green="1" blue="0.78583229809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="JMT-DV-A7r" kind="presentation" id="ju6-0V-aH0"/>
+                                    <segue destination="sA6-9u-L8H" kind="presentation" modalPresentationStyle="fullScreen" id="Wx9-dU-A1S"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Height" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsr-M0-jSv">
@@ -272,7 +272,23 @@
             </objects>
             <point key="canvasLocation" x="1967.6923076923076" y="88.862559241706151"/>
         </scene>
-        <!--View Controller Confirm-->
+        <!--Navigation Controller-->
+        <scene sceneID="b2T-hm-FWe">
+            <objects>
+                <navigationController id="sA6-9u-L8H" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9UL-3g-5jZ">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="JMT-DV-A7r" kind="relationship" relationship="rootViewController" id="rrp-og-jLY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWh-Uk-yJJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2937" y="89"/>
+        </scene>
+        <!--Select Daily Goal-->
         <scene sceneID="3sj-cW-vcT">
             <objects>
                 <viewController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="JMT-DV-A7r" customClass="ViewControllerConfirm" customModule="normanl_project" customModuleProvider="target" sceneMemberID="viewController">
@@ -281,32 +297,38 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiI-j4-gIM">
-                                <rect key="frame" x="16" y="61" width="358" height="56"/>
+                                <rect key="frame" x="16" y="105" width="358" height="56"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
                                 <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eqx-Th-F26">
-                                <rect key="frame" x="16" y="252" width="358" height="89"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="eqx-Th-F26">
+                                <rect key="frame" x="16" y="296" width="358" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
                                 <state key="normal" title="Recommendation 1:            Daily calorie goal = 2250">
                                     <color key="titleColor" systemColor="systemTealColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="recommendationSelected:" destination="JMT-DV-A7r" eventType="touchDown" id="3M4-XB-PBz"/>
+                                    <segue destination="U9p-EX-0cf" kind="push" id="uZM-5a-MBs"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select the calorie goal you would like to reach." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWt-to-7K7">
-                                <rect key="frame" x="16" y="141" width="358" height="57"/>
+                                <rect key="frame" x="16" y="185" width="358" height="57"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="j5k-6b-xky">
-                                <rect key="frame" x="16" y="373" width="358" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="j5k-6b-xky">
+                                <rect key="frame" x="16" y="407" width="358" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
                                 <state key="normal" title="Recommendation 2:            Daily calorie goal = 2000">
                                     <color key="titleColor" red="1" green="0.83083943019999995" blue="0.4693358399" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="recommendationSelected:" destination="JMT-DV-A7r" eventType="touchDown" id="Igb-09-jxD"/>
+                                    <segue destination="U9p-EX-0cf" kind="push" id="v8M-lB-D7n"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Disclaimer: These recommendations are not based on your given information. This is displayed for demo purposes only." textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AZ3-FQ-CIx">
                                 <rect key="frame" x="16" y="761" width="358" height="49"/>
@@ -315,13 +337,16 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pRH-JK-mHk">
-                                <rect key="frame" x="16" y="489" width="358" height="88"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="pRH-JK-mHk">
+                                <rect key="frame" x="16" y="518" width="358" height="44"/>
                                 <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="28"/>
                                 <state key="normal" title="Recommendation 3:            Daily calorie goal = 1700">
                                     <color key="titleColor" systemColor="systemGreenColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="recommendationSelected:" destination="JMT-DV-A7r" eventType="touchDown" id="dVT-Z3-F84"/>
+                                    <segue destination="U9p-EX-0cf" kind="push" id="kOp-HH-mqv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qrC-xQ-b3U"/>
@@ -329,34 +354,236 @@
                         <constraints>
                             <constraint firstItem="qrC-xQ-b3U" firstAttribute="trailing" secondItem="cWt-to-7K7" secondAttribute="trailing" constant="16" id="2oF-8X-Mlp"/>
                             <constraint firstItem="fiI-j4-gIM" firstAttribute="leading" secondItem="qrC-xQ-b3U" secondAttribute="leading" constant="16" id="3Ed-5r-OB6"/>
+                            <constraint firstItem="j5k-6b-xky" firstAttribute="leading" secondItem="qrC-xQ-b3U" secondAttribute="leading" constant="16" id="3hh-zx-QY1"/>
+                            <constraint firstItem="qrC-xQ-b3U" firstAttribute="trailing" secondItem="j5k-6b-xky" secondAttribute="trailing" constant="16" id="523-Wq-26e"/>
+                            <constraint firstItem="eqx-Th-F26" firstAttribute="leading" secondItem="qrC-xQ-b3U" secondAttribute="leading" constant="16" id="97a-KY-6g4"/>
                             <constraint firstItem="cWt-to-7K7" firstAttribute="leading" secondItem="qrC-xQ-b3U" secondAttribute="leading" constant="16" id="J98-q9-khf"/>
                             <constraint firstItem="fiI-j4-gIM" firstAttribute="top" secondItem="qrC-xQ-b3U" secondAttribute="top" constant="17" id="Nhh-e8-4n6"/>
+                            <constraint firstItem="pRH-JK-mHk" firstAttribute="top" secondItem="j5k-6b-xky" secondAttribute="bottom" constant="67" id="OqN-7I-qVR"/>
+                            <constraint firstItem="eqx-Th-F26" firstAttribute="top" secondItem="cWt-to-7K7" secondAttribute="bottom" constant="54" id="PCL-57-oqV"/>
+                            <constraint firstItem="qrC-xQ-b3U" firstAttribute="trailing" secondItem="pRH-JK-mHk" secondAttribute="trailing" constant="16" id="SBZ-mA-dda"/>
                             <constraint firstItem="cWt-to-7K7" firstAttribute="top" secondItem="fiI-j4-gIM" secondAttribute="bottom" constant="24" id="SoY-zH-z8D"/>
+                            <constraint firstItem="qrC-xQ-b3U" firstAttribute="trailing" secondItem="eqx-Th-F26" secondAttribute="trailing" constant="16" id="UZt-yC-iyg"/>
+                            <constraint firstItem="j5k-6b-xky" firstAttribute="top" secondItem="eqx-Th-F26" secondAttribute="bottom" constant="67" id="XzI-o3-Api"/>
+                            <constraint firstItem="pRH-JK-mHk" firstAttribute="leading" secondItem="qrC-xQ-b3U" secondAttribute="leading" constant="16" id="mZY-7b-63P"/>
                             <constraint firstItem="qrC-xQ-b3U" firstAttribute="trailing" secondItem="fiI-j4-gIM" secondAttribute="trailing" constant="16" id="seN-c5-v0Q"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Select Daily Goal" id="8mt-Qd-dKU"/>
+                    <connections>
+                        <outlet property="recommendation1" destination="eqx-Th-F26" id="ZoI-B5-YfX"/>
+                        <outlet property="recommendation2" destination="j5k-6b-xky" id="zK6-nr-ZaH"/>
+                        <outlet property="recommendation3" destination="pRH-JK-mHk" id="Dfv-oC-Zea"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u5y-W9-Glv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2909.2307692307691" y="88.862559241706151"/>
+            <point key="canvasLocation" x="3886" y="89"/>
         </scene>
-        <!--View Controller-->
+        <!--View Controller Confirm Goal-->
         <scene sceneID="Ev4-Vj-HMZ">
             <objects>
-                <viewController id="U9p-EX-0cf" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="U9p-EX-0cf" customClass="ViewControllerConfirmGoal" customModule="normanl_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyK-nZ-16p">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2l-X5-SUn">
+                                <rect key="frame" x="16" y="105" width="358" height="56"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please confirm your daily calorie goal." textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZHj-IS-deS">
+                                <rect key="frame" x="16" y="204" width="358" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2lC-vJ-gVs">
+                                <rect key="frame" x="16" y="505" width="358" height="58"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="41"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" red="0.61568627450000002" green="1" blue="0.78583229809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Udo-GQ-PBz" kind="presentation" id="xKz-OK-AMW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0ek-Oo-hSn">
+                                <rect key="frame" x="16" y="309" width="358" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Daily calorie goal:">
+                                        <attributes>
+                                            <color key="NSColor" red="0.083448190780000001" green="0.1202161066" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Didot-Italic"/>
+                                            <font key="NSOriginalFont" size="36" name="Didot-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.083448190780000001" green="0.1202161066" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Didot-Italic"/>
+                                            <font key="NSOriginalFont" size="36" name="Didot-Italic"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="9999 calories">
+                                        <attributes>
+                                            <color key="NSColor" red="0.083448190780000001" green="0.1202161066" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Wsl-gY-VDR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="W2l-X5-SUn" firstAttribute="leading" secondItem="Wsl-gY-VDR" secondAttribute="leading" constant="16" id="im0-rA-PK7"/>
+                            <constraint firstItem="W2l-X5-SUn" firstAttribute="top" secondItem="Wsl-gY-VDR" secondAttribute="top" constant="17" id="iwq-dT-LxH"/>
+                            <constraint firstItem="Wsl-gY-VDR" firstAttribute="trailing" secondItem="W2l-X5-SUn" secondAttribute="trailing" constant="16" id="m7W-5y-6Rn"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="sKu-9L-ZWZ"/>
+                    <connections>
+                        <outlet property="dailyGoalLabel" destination="0ek-Oo-hSn" id="pPY-5j-Gbo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="koV-Uk-DyK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3902" y="89"/>
+            <point key="canvasLocation" x="4864.6153846153848" y="88.862559241706151"/>
+        </scene>
+        <!--Drinks-->
+        <scene sceneID="0Eh-us-fOA">
+            <objects>
+                <viewController id="WsR-sf-npt" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Sje-Na-gf4">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U39-6H-s5j">
+                                <rect key="frame" x="16" y="64" width="358" height="56"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="npL-0R-jz6"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="U39-6H-s5j" firstAttribute="leading" secondItem="npL-0R-jz6" secondAttribute="leading" constant="16" id="D3F-rJ-EzY"/>
+                            <constraint firstItem="npL-0R-jz6" firstAttribute="trailing" secondItem="U39-6H-s5j" secondAttribute="trailing" constant="16" id="MUJ-kH-KZ1"/>
+                            <constraint firstItem="U39-6H-s5j" firstAttribute="top" secondItem="npL-0R-jz6" secondAttribute="top" constant="20" id="olh-oB-LZq"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Drinks" image="smallcircle.fill.circle.fill" catalog="system" id="Br9-iQ-c88"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gji-Xv-paJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6708" y="868"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="f2U-CJ-mb8">
+            <objects>
+                <viewController id="nqp-2a-5ph" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Bp7-vC-IJ8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3nu-1O-jW3">
+                                <rect key="frame" x="16" y="64" width="358" height="56"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9tr-01-XxM">
+                                <rect key="frame" x="16" y="144" width="358" height="38"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VuI-Ml-kQg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9tr-01-XxM" firstAttribute="top" secondItem="3nu-1O-jW3" secondAttribute="bottom" constant="24" id="8mM-aI-ovi"/>
+                            <constraint firstItem="VuI-Ml-kQg" firstAttribute="trailing" secondItem="3nu-1O-jW3" secondAttribute="trailing" constant="16" id="KeD-70-JH3"/>
+                            <constraint firstItem="9tr-01-XxM" firstAttribute="leading" secondItem="VuI-Ml-kQg" secondAttribute="leading" constant="16" id="Po9-Mc-prq"/>
+                            <constraint firstItem="3nu-1O-jW3" firstAttribute="leading" secondItem="VuI-Ml-kQg" secondAttribute="leading" constant="16" id="aKh-4I-NeP"/>
+                            <constraint firstItem="3nu-1O-jW3" firstAttribute="top" secondItem="VuI-Ml-kQg" secondAttribute="top" constant="20" id="fF3-5j-FUK"/>
+                            <constraint firstItem="VuI-Ml-kQg" firstAttribute="trailing" secondItem="9tr-01-XxM" secondAttribute="trailing" constant="16" id="wOf-EW-K6H"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" id="haq-re-5VG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="088-pn-hX6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6707.6923076923076" y="88.862559241706151"/>
+        </scene>
+        <!--Food-->
+        <scene sceneID="C89-gW-mKV">
+            <objects>
+                <viewController id="37g-MS-9it" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TeB-OV-Z1k">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPy-kD-5iP">
+                                <rect key="frame" x="16" y="64" width="358" height="56"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="hp1-8L-1xE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jPy-kD-5iP" firstAttribute="top" secondItem="hp1-8L-1xE" secondAttribute="top" constant="20" id="6kk-t3-yR7"/>
+                            <constraint firstItem="hp1-8L-1xE" firstAttribute="trailing" secondItem="jPy-kD-5iP" secondAttribute="trailing" constant="16" id="Qhk-JO-Pl1"/>
+                            <constraint firstItem="jPy-kD-5iP" firstAttribute="leading" secondItem="hp1-8L-1xE" secondAttribute="leading" constant="16" id="tA9-9r-W3G"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Food" image="tray" catalog="system" id="wik-C9-o9I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="keW-l9-z0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6708" y="-741"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="jvD-Tb-Yx2">
+            <objects>
+                <tabBarController modalTransitionStyle="crossDissolve" modalPresentationStyle="fullScreen" id="Udo-GQ-PBz" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="LC7-Kv-zXQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="nqp-2a-5ph" kind="relationship" relationship="viewControllers" id="T22-6L-2Wx"/>
+                        <segue destination="WsR-sf-npt" kind="relationship" relationship="viewControllers" id="fmy-FN-b8V"/>
+                        <segue destination="37g-MS-9it" kind="relationship" relationship="viewControllers" id="NwT-q1-JrY"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bcD-Il-Agy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5760" y="89"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="kOp-HH-mqv"/>
+    </inferredMetricsTieBreakers>
     <resources>
+        <image name="house" catalog="system" width="128" height="106"/>
+        <image name="smallcircle.fill.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="tray" catalog="system" width="128" height="88"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
