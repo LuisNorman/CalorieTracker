@@ -529,33 +529,74 @@
             <point key="canvasLocation" x="6707.6923076923076" y="88.862559241706151"/>
         </scene>
         <!--Food-->
-        <scene sceneID="C89-gW-mKV">
+        <scene sceneID="MqG-We-XjV">
             <objects>
-                <viewController id="37g-MS-9it" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="TeB-OV-Z1k">
+                <navigationController id="zKQ-F5-sk1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Food" image="tray.circle.fill" catalog="system" id="SVX-Md-98t"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GlV-CP-4bI">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ths-zO-iFY" kind="relationship" relationship="rootViewController" id="YHS-70-vUq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dG-XQ-3yn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6708" y="-695"/>
+        </scene>
+        <!--Select Food-->
+        <scene sceneID="Tnu-uo-6pa">
+            <objects>
+                <tableViewController modalPresentationStyle="fullScreen" id="ths-zO-iFY" customClass="TableViewControllerFood" customModule="normanl_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="6Y4-J3-x30">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPy-kD-5iP">
-                                <rect key="frame" x="16" y="64" width="358" height="56"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
-                                <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="hp1-8L-1xE"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="jPy-kD-5iP" firstAttribute="top" secondItem="hp1-8L-1xE" secondAttribute="top" constant="20" id="6kk-t3-yR7"/>
-                            <constraint firstItem="hp1-8L-1xE" firstAttribute="trailing" secondItem="jPy-kD-5iP" secondAttribute="trailing" constant="16" id="Qhk-JO-Pl1"/>
-                            <constraint firstItem="jPy-kD-5iP" firstAttribute="leading" secondItem="hp1-8L-1xE" secondAttribute="leading" constant="16" id="tA9-9r-W3G"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Food" image="tray" catalog="system" id="wik-C9-o9I"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="keW-l9-z0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                        <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ivs-qe-Zfk">
+                            <rect key="frame" x="0.0" y="0.0" width="390" height="71"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="42"/>
+                            <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="detailDisclosureButton" indentationWidth="10" reuseIdentifier="food" textLabel="Fic-z2-rOU" imageView="Hmh-66-0fM" style="IBUITableViewCellStyleDefault" id="xrp-aE-Xmq">
+                                <rect key="frame" x="0.0" y="99" width="390" height="57.666667938232422"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xrp-aE-Xmq" id="Zdb-Vf-6cR">
+                                    <rect key="frame" x="0.0" y="0.0" width="326.66666666666669" height="57.666667938232422"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fic-z2-rOU">
+                                            <rect key="frame" x="93" y="0.0" width="225.66666666666669" height="57.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="21"/>
+                                            <color key="textColor" red="0.75916696890000002" green="0.858276135" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="FoodImage" id="Hmh-66-0fM">
+                                            <rect key="frame" x="20" y="0.0" width="58" height="57.666666666666664"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </imageView>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="YzD-eB-yy3" kind="push" id="bAt-CM-wnK"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ths-zO-iFY" id="1h9-M0-elf"/>
+                            <outlet property="delegate" destination="ths-zO-iFY" id="sg8-VW-Qrn"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Food" image="tray.circle.fill" catalog="system" id="7oM-Ht-qNC"/>
+                    <navigationItem key="navigationItem" title="Select Food" id="XTz-eb-XHC"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kpw-qt-TAr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6708" y="-741"/>
+            <point key="canvasLocation" x="7557" y="-695"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="jvD-Tb-Yx2">
@@ -569,21 +610,111 @@
                     <connections>
                         <segue destination="nqp-2a-5ph" kind="relationship" relationship="viewControllers" id="T22-6L-2Wx"/>
                         <segue destination="WsR-sf-npt" kind="relationship" relationship="viewControllers" id="fmy-FN-b8V"/>
-                        <segue destination="37g-MS-9it" kind="relationship" relationship="viewControllers" id="NwT-q1-JrY"/>
+                        <segue destination="zKQ-F5-sk1" kind="relationship" relationship="viewControllers" id="IVt-hS-OGH"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bcD-Il-Agy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5760" y="89"/>
         </scene>
+        <!--Food Details-->
+        <scene sceneID="VhX-ay-cla">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="YzD-eB-yy3" customClass="ViewControllerFoodDetail" customModule="normanl_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JN0-Wp-fPC" customClass="UIControl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xel-1M-0Jw">
+                                <rect key="frame" x="16" y="106" width="358" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="33"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FT-SP-BDU">
+                                <rect key="frame" x="16" y="179" width="358" height="21"/>
+                                <fontDescription key="fontDescription" name="HiraginoSans-W3" family="Hiragino Sans" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter size (Note: small, medium, large = 1, 2, 3)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hL7-uM-W8p">
+                                <rect key="frame" x="16" y="245" width="358" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="XaP-l6-VpW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="editEnded:" destination="YzD-eB-yy3" eventType="editingDidEndOnExit" id="4AH-zf-FGg"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xLi-DH-vSm">
+                                <rect key="frame" x="16" y="310" width="358" height="39"/>
+                                <color key="backgroundColor" red="0.72151646780000001" green="1" blue="0.9449573496" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="eHY-sB-OjW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="24"/>
+                                <state key="normal" title="Calculate">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterPressed:" destination="YzD-eB-yy3" eventType="touchUpInside" id="opr-yH-Kbf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="roW-Ku-IIy">
+                                <rect key="frame" x="16" y="402" width="358" height="41"/>
+                                <color key="backgroundColor" red="0.92156862750000001" green="0.7843137255" blue="0.78583229809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="358" id="LQc-A5-aor"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="32"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="enterPressed:" destination="YzD-eB-yy3" eventType="touchUpInside" id="tSG-Q2-AlP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AGt-63-5YB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="xel-1M-0Jw" firstAttribute="centerX" secondItem="JN0-Wp-fPC" secondAttribute="centerX" id="1lL-g0-pFX"/>
+                            <constraint firstItem="4FT-SP-BDU" firstAttribute="centerX" secondItem="JN0-Wp-fPC" secondAttribute="centerX" id="F85-vH-MYQ"/>
+                            <constraint firstItem="xLi-DH-vSm" firstAttribute="top" secondItem="hL7-uM-W8p" secondAttribute="bottom" constant="31" id="G8H-xg-a4k"/>
+                            <constraint firstItem="4FT-SP-BDU" firstAttribute="top" secondItem="xel-1M-0Jw" secondAttribute="bottom" constant="33" id="Jkz-2j-tB0"/>
+                            <constraint firstItem="hL7-uM-W8p" firstAttribute="centerX" secondItem="JN0-Wp-fPC" secondAttribute="centerX" id="Spd-yU-eGO"/>
+                            <constraint firstItem="xel-1M-0Jw" firstAttribute="top" secondItem="AGt-63-5YB" secondAttribute="top" constant="18" id="V1T-LL-O9g"/>
+                            <constraint firstItem="hL7-uM-W8p" firstAttribute="top" secondItem="4FT-SP-BDU" secondAttribute="bottom" constant="45" id="V4t-bf-zNM"/>
+                            <constraint firstItem="xLi-DH-vSm" firstAttribute="centerX" secondItem="JN0-Wp-fPC" secondAttribute="centerX" id="XiG-1D-s2v"/>
+                        </constraints>
+                        <connections>
+                            <action selector="backgroundTouched:" destination="YzD-eB-yy3" eventType="touchDown" id="sT7-E8-WFZ"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" title="Food Details" id="6U6-BA-ajq">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="POS-V0-mys"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="4FT-SP-BDU" id="vhj-kn-0yd"/>
+                        <outlet property="sizeTextField" destination="hL7-uM-W8p" id="dkW-AW-gl1"/>
+                        <outlet property="titleLabel" destination="xel-1M-0Jw" id="o3B-pc-dzj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hVH-kB-mBw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8389" y="-695"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kOp-HH-mqv"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="FoodImage" width="80" height="80"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="smallcircle.fill.circle.fill" catalog="system" width="128" height="121"/>
-        <image name="tray" catalog="system" width="128" height="88"/>
+        <image name="tray.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

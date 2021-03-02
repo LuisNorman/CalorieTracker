@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A09198F625EDBDBA002E0378 /* ViewControllerConfirm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09198F525EDBDBA002E0378 /* ViewControllerConfirm.swift */; };
 		A09198F925EE9753002E0378 /* ViewControllerConfirmGoal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09198F825EE9753002E0378 /* ViewControllerConfirmGoal.swift */; };
+		A09198FC25EEC529002E0378 /* TableViewControllerFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09198FB25EEC528002E0378 /* TableViewControllerFood.swift */; };
+		A09198FF25EECA58002E0378 /* ViewControllerFoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09198FE25EECA58002E0378 /* ViewControllerFoodDetail.swift */; };
 		A0FEC9EE25ED7E85005FBBA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC9ED25ED7E85005FBBA3 /* AppDelegate.swift */; };
 		A0FEC9F025ED7E85005FBBA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC9EF25ED7E85005FBBA3 /* SceneDelegate.swift */; };
 		A0FEC9F225ED7E85005FBBA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC9F125ED7E85005FBBA3 /* ViewController.swift */; };
@@ -20,6 +22,8 @@
 /* Begin PBXFileReference section */
 		A09198F525EDBDBA002E0378 /* ViewControllerConfirm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfirm.swift; sourceTree = "<group>"; };
 		A09198F825EE9753002E0378 /* ViewControllerConfirmGoal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConfirmGoal.swift; sourceTree = "<group>"; };
+		A09198FB25EEC528002E0378 /* TableViewControllerFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerFood.swift; sourceTree = "<group>"; };
+		A09198FE25EECA58002E0378 /* ViewControllerFoodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFoodDetail.swift; sourceTree = "<group>"; };
 		A0FEC9EA25ED7E85005FBBA3 /* normanl-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "normanl-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FEC9ED25ED7E85005FBBA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0FEC9EF25ED7E85005FBBA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -69,6 +73,8 @@
 				A0FEC9FB25ED7E87005FBBA3 /* Info.plist */,
 				A09198F525EDBDBA002E0378 /* ViewControllerConfirm.swift */,
 				A09198F825EE9753002E0378 /* ViewControllerConfirmGoal.swift */,
+				A09198FB25EEC528002E0378 /* TableViewControllerFood.swift */,
+				A09198FE25EECA58002E0378 /* ViewControllerFoodDetail.swift */,
 			);
 			path = "normanl-project";
 			sourceTree = "<group>";
@@ -144,6 +150,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09198F925EE9753002E0378 /* ViewControllerConfirmGoal.swift in Sources */,
+				A09198FF25EECA58002E0378 /* ViewControllerFoodDetail.swift in Sources */,
+				A09198FC25EEC529002E0378 /* TableViewControllerFood.swift in Sources */,
 				A0FEC9F225ED7E85005FBBA3 /* ViewController.swift in Sources */,
 				A0FEC9EE25ED7E85005FBBA3 /* AppDelegate.swift in Sources */,
 				A0FEC9F025ED7E85005FBBA3 /* SceneDelegate.swift in Sources */,
