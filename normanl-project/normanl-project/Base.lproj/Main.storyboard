@@ -383,6 +383,7 @@
         <!--View Controller Confirm Goal-->
         <scene sceneID="Ev4-Vj-HMZ">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="koV-Uk-DyK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController modalPresentationStyle="fullScreen" id="U9p-EX-0cf" customClass="ViewControllerConfirmGoal" customModule="normanl_project" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AyK-nZ-16p">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
@@ -409,6 +410,7 @@
                                     <color key="titleColor" red="0.61568627450000002" green="1" blue="0.78583229809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="confimPressed:" destination="U9p-EX-0cf" eventType="touchDown" id="rJf-PA-ps1"/>
                                     <segue destination="Udo-GQ-PBz" kind="presentation" id="xKz-OK-AMW"/>
                                 </connections>
                             </button>
@@ -457,7 +459,6 @@
                         <outlet property="dailyGoalLabel" destination="0ek-Oo-hSn" id="pPY-5j-Gbo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="koV-Uk-DyK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4864.6153846153848" y="88.862559241706151"/>
         </scene>
@@ -739,7 +740,7 @@
                     <navigationItem key="navigationItem" title="Complete Days" id="Ph3-IG-U0m">
                         <barButtonItem key="leftBarButtonItem" title="Item" image="arrowshape.turn.up.backward.fill" catalog="system" id="HSd-Cb-6wp">
                             <connections>
-                                <segue destination="Udo-GQ-PBz" kind="presentation" id="Yte-hG-QAy"/>
+                                <segue destination="Udo-GQ-PBz" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="Yte-hG-QAy"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -756,31 +757,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-e0-Enh">
-                                <rect key="frame" x="141" y="132" width="108" height="55"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-e0-Enh">
+                                <rect key="frame" x="123" y="227" width="145" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="46"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="46"/>
+                                <color key="textColor" red="0.51028248623092975" green="0.7848397280615147" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="lUV-3I-Fr6">
-                                <rect key="frame" x="120" y="669" width="150" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </progressView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories: 9999" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-Ky-JVf">
-                                <rect key="frame" x="16" y="220" width="358" height="45"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPb-59-JoS">
-                                <rect key="frame" x="16" y="273" width="358" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-Ky-JVf">
+                                <rect key="frame" x="16" y="380" width="358" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Foods/Drinks">
+                                    <fragment content="Total calories consumed">
                                         <attributes>
-                                            <font key="NSFont" size="22" name="Menlo-Regular"/>
+                                            <color key="NSColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <font key="NSFont" size="24" name="Menlo-Regular"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             <integer key="NSUnderline" value="1"/>
                                         </attributes>
@@ -788,26 +779,62 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calories: 9999" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8h-Qs-vGh">
-                                <rect key="frame" x="16" y="312" width="358" height="349"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAF-PU-vS7">
+                                <rect key="frame" x="16" y="124" width="358" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="18"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
+                                <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slm-rI-qpt">
+                                <rect key="frame" x="16" y="429" width="358" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="9999 calories">
+                                        <attributes>
+                                            <color key="NSColor" red="0.48787368549999999" green="0.72059857230000002" blue="1" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="33" name="Thonburi"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum text is great to use at times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS9-I3-okh">
+                                <rect key="frame" x="16" y="549" width="358" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal: 9999 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el8-gN-w6c">
+                                <rect key="frame" x="20" y="472" width="350" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="31"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.96999999999999997" translatesAutoresizingMaskIntoConstraints="NO" id="lUV-3I-Fr6">
+                                <rect key="frame" x="16" y="598" width="354" height="4"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.1633869584" green="1" blue="0.152754853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YnC-KQ-na9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="xXY-bb-fWU"/>
                     <connections>
-                        <outlet property="caloriesLabel" destination="ROv-Ky-JVf" id="A0o-uq-CSW"/>
-                        <outlet property="foodsAndDrinks" destination="b8h-Qs-vGh" id="ute-J2-28r"/>
+                        <outlet property="caloriesLabel" destination="slm-rI-qpt" id="Hrs-81-4eU"/>
+                        <outlet property="dayLabel" destination="7WP-e0-Enh" id="nOO-Im-Ttp"/>
+                        <outlet property="goalLabel" destination="el8-gN-w6c" id="28L-Wx-MI1"/>
+                        <outlet property="progressBar" destination="lUV-3I-Fr6" id="VTy-wC-ZRU"/>
+                        <outlet property="statusLabel" destination="dS9-I3-okh" id="0bS-b4-jzQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6BJ-4f-QYC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="9481.538461538461" y="88.862559241706151"/>
+            <point key="canvasLocation" x="9473.8461538461543" y="88.862559241706151"/>
         </scene>
         <!--Past Days-->
         <scene sceneID="5XG-Bn-dbE">
@@ -1039,7 +1066,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="Yte-hG-QAy"/>
-        <segue reference="iZC-Wo-0su"/>
+        <segue reference="cep-nz-IoW"/>
         <segue reference="kOp-HH-mqv"/>
     </inferredMetricsTieBreakers>
     <resources>

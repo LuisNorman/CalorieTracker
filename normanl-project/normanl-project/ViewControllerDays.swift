@@ -9,11 +9,19 @@ import UIKit
 
 class ViewControllerDays: UIViewController {
 
-    @IBOutlet weak var foodsAndDrinks: UILabel!
     @IBOutlet weak var caloriesLabel: UILabel!
     
+    @IBOutlet weak var dayLabel: UILabel!
+    
+    @IBOutlet weak var statusLabel: UILabel!
+    
     var calories : String?
-    var foodsDrinks : [String]?
+
+    var day : Int?
+    
+    @IBOutlet weak var goalLabel: UILabel!
+    
+    @IBOutlet weak var progressBar: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,14 +29,30 @@ class ViewControllerDays: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
-
-    
     // Update detail view based on data passed from table view
     override func viewWillAppear(_ animated: Bool) {
-        caloriesLabel.text = "Calories: 1750"
-        foodsAndDrinks.text = "Salmon\nGingerAle\nBurrito"
-        [foodsAndDrinks .sizeToFit()]
+        if let cals = calories {
+            caloriesLabel.text = "\(cals) calories"
+            // Display if goal was reached or not
+            if (CompletedDays.getGoal() > Int(cals)!) {
+                statusLabel.text = "Wooohooo - you did it!"
+                progressBar.progressTintColor = .green
+            }
+            else {
+                statusLabel.text = "Uh Oh! You didn't meet your goal."
+                
+                progressBar.progressTintColor = .red
+                progressBar.progress = 0.25
+            }
+        }
+        // Display day
+        if let d = day {
+            dayLabel.text = "Day \(d + 1)"
+        }
+        
+        goalLabel.text = "Goal: \(CompletedDays.getGoal())"
+        
+        
         
     }
     

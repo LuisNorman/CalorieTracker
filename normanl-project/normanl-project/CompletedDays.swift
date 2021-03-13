@@ -7,7 +7,11 @@
 
 import Foundation
 
+
 class CompletedDays {
+    
+    static var goal : Int = 0
+    
     static var completedDays : [String] = []
 
     static func add(_ day : String) {
@@ -18,13 +22,13 @@ class CompletedDays {
         return completedDays
     }
     
-//    var completedDays : [String] {
-//        get {
-//            return self.completedDays
-//        }
-//        set(day) {
-//            completedDays.append(contentsOf: day)
-//        }
-//    }
+
+    static func setGoal(_ _goal : Int) {
+        goal = _goal
+    }
+    
+    static func getGoal() -> Int {
+        return goal
+    }
     
 }

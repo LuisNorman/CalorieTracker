@@ -12,7 +12,7 @@ class ViewControllerHome: UIViewController {
     @IBOutlet weak var calorieLabel: UILabel!
     var incomingCalories : Int?
     var currentCalorieInt : Int = 0
-    var completedDays : [String] = []
+//    var completedDays : [String] = []
     
     @IBOutlet weak var completeButton: UIButton!
     
@@ -40,8 +40,8 @@ class ViewControllerHome: UIViewController {
     // Add the completed day to array and reset values
     @IBAction func completePressed(_ sender: UIButton) {
         if (currentCalorieInt > 0) {
-            CompletedDays.add(calorieLabel.text!)
-            completedDays.append(calorieLabel.text!)
+            CompletedDays.add(calorieLabel.text!.components(separatedBy: " ").first!)
+//            completedDays.append(calorieLabel.text!)
             currentCalorieInt = 0
             calorieLabel.text = "0 calories"
             incomingCalories = 0

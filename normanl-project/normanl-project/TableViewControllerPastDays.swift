@@ -44,6 +44,16 @@ class TableViewControllerPastDays: UITableViewController {
         return cell
     }
     
+    // pass data to detail view
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let daysVC = segue.destination as? ViewControllerDays {
+            if let indexPath = self.tableView.indexPathForSelectedRow {
+                daysVC.calories = CompletedDays.get()[indexPath.row]
+                daysVC.day = indexPath.row
+            }
+        }
+    }
+    
 //    @IBAction func backButtonPressed(_ sender: UIBarButtonItem) {
 //        if let tabBarController = self.navigationController?.tabBarController {
 //            tabBarController.selectedIndex = 1

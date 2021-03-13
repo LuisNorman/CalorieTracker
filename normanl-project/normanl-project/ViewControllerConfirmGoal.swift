@@ -24,6 +24,10 @@ class ViewControllerConfirmGoal: UIViewController {
         dailyGoalLabel.text = "Daily calorie goal: \(goal ?? "Unknown") calories"
     }
     
+    @IBAction func confimPressed(_ sender: UIButton) {
+        let newG = Int(goal!)
+        CompletedDays.setGoal(newG!)
+    }
     
     
     /*
