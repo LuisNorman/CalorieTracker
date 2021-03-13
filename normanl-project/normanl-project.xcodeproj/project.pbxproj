@@ -12,6 +12,13 @@
 		A09198FC25EEC529002E0378 /* TableViewControllerFood.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09198FB25EEC528002E0378 /* TableViewControllerFood.swift */; };
 		A09198FF25EECA58002E0378 /* ViewControllerFoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09198FE25EECA58002E0378 /* ViewControllerFoodDetail.swift */; };
 		A091990225EED4F8002E0378 /* ViewControllerHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091990125EED4F8002E0378 /* ViewControllerHome.swift */; };
+		A091D18025F30001000A0F5C /* TableViewControllerDrinks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D17F25F30001000A0F5C /* TableViewControllerDrinks.swift */; };
+		A091D18325F30017000A0F5C /* ViewControllerDrinkDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D18225F30017000A0F5C /* ViewControllerDrinkDetail.swift */; };
+		A091D18C25FC1DA0000A0F5C /* TableViewControllerPastDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D18B25FC1DA0000A0F5C /* TableViewControllerPastDays.swift */; };
+		A091D18F25FC241C000A0F5C /* NavigationViewControllerDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D18E25FC241C000A0F5C /* NavigationViewControllerDays.swift */; };
+		A091D19225FC271F000A0F5C /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D19125FC271F000A0F5C /* TabBarViewController.swift */; };
+		A091D19525FC389C000A0F5C /* CompletedDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D19425FC389C000A0F5C /* CompletedDays.swift */; };
+		A091D19825FC41B6000A0F5C /* ViewControllerDays.swift in Sources */ = {isa = PBXBuildFile; fileRef = A091D19725FC41B6000A0F5C /* ViewControllerDays.swift */; };
 		A0FEC9EE25ED7E85005FBBA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC9ED25ED7E85005FBBA3 /* AppDelegate.swift */; };
 		A0FEC9F025ED7E85005FBBA3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC9EF25ED7E85005FBBA3 /* SceneDelegate.swift */; };
 		A0FEC9F225ED7E85005FBBA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0FEC9F125ED7E85005FBBA3 /* ViewController.swift */; };
@@ -26,6 +33,13 @@
 		A09198FB25EEC528002E0378 /* TableViewControllerFood.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerFood.swift; sourceTree = "<group>"; };
 		A09198FE25EECA58002E0378 /* ViewControllerFoodDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFoodDetail.swift; sourceTree = "<group>"; };
 		A091990125EED4F8002E0378 /* ViewControllerHome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerHome.swift; sourceTree = "<group>"; };
+		A091D17F25F30001000A0F5C /* TableViewControllerDrinks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerDrinks.swift; sourceTree = "<group>"; };
+		A091D18225F30017000A0F5C /* ViewControllerDrinkDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDrinkDetail.swift; sourceTree = "<group>"; };
+		A091D18B25FC1DA0000A0F5C /* TableViewControllerPastDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewControllerPastDays.swift; sourceTree = "<group>"; };
+		A091D18E25FC241C000A0F5C /* NavigationViewControllerDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewControllerDays.swift; sourceTree = "<group>"; };
+		A091D19125FC271F000A0F5C /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		A091D19425FC389C000A0F5C /* CompletedDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompletedDays.swift; sourceTree = "<group>"; };
+		A091D19725FC41B6000A0F5C /* ViewControllerDays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerDays.swift; sourceTree = "<group>"; };
 		A0FEC9EA25ED7E85005FBBA3 /* normanl-project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "normanl-project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0FEC9ED25ED7E85005FBBA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A0FEC9EF25ED7E85005FBBA3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +84,7 @@
 				A0FEC9EF25ED7E85005FBBA3 /* SceneDelegate.swift */,
 				A0FEC9F125ED7E85005FBBA3 /* ViewController.swift */,
 				A0FEC9F325ED7E85005FBBA3 /* Main.storyboard */,
+				A091D19725FC41B6000A0F5C /* ViewControllerDays.swift */,
 				A0FEC9F625ED7E87005FBBA3 /* Assets.xcassets */,
 				A0FEC9F825ED7E87005FBBA3 /* LaunchScreen.storyboard */,
 				A0FEC9FB25ED7E87005FBBA3 /* Info.plist */,
@@ -78,6 +93,12 @@
 				A09198FB25EEC528002E0378 /* TableViewControllerFood.swift */,
 				A09198FE25EECA58002E0378 /* ViewControllerFoodDetail.swift */,
 				A091990125EED4F8002E0378 /* ViewControllerHome.swift */,
+				A091D17F25F30001000A0F5C /* TableViewControllerDrinks.swift */,
+				A091D18225F30017000A0F5C /* ViewControllerDrinkDetail.swift */,
+				A091D18B25FC1DA0000A0F5C /* TableViewControllerPastDays.swift */,
+				A091D18E25FC241C000A0F5C /* NavigationViewControllerDays.swift */,
+				A091D19125FC271F000A0F5C /* TabBarViewController.swift */,
+				A091D19425FC389C000A0F5C /* CompletedDays.swift */,
 			);
 			path = "normanl-project";
 			sourceTree = "<group>";
@@ -153,11 +174,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A09198F925EE9753002E0378 /* ViewControllerConfirmGoal.swift in Sources */,
+				A091D18C25FC1DA0000A0F5C /* TableViewControllerPastDays.swift in Sources */,
+				A091D19825FC41B6000A0F5C /* ViewControllerDays.swift in Sources */,
 				A09198FF25EECA58002E0378 /* ViewControllerFoodDetail.swift in Sources */,
+				A091D18325F30017000A0F5C /* ViewControllerDrinkDetail.swift in Sources */,
 				A09198FC25EEC529002E0378 /* TableViewControllerFood.swift in Sources */,
+				A091D18F25FC241C000A0F5C /* NavigationViewControllerDays.swift in Sources */,
+				A091D19525FC389C000A0F5C /* CompletedDays.swift in Sources */,
 				A091990225EED4F8002E0378 /* ViewControllerHome.swift in Sources */,
+				A091D18025F30001000A0F5C /* TableViewControllerDrinks.swift in Sources */,
 				A0FEC9F225ED7E85005FBBA3 /* ViewController.swift in Sources */,
 				A0FEC9EE25ED7E85005FBBA3 /* AppDelegate.swift in Sources */,
+				A091D19225FC271F000A0F5C /* TabBarViewController.swift in Sources */,
 				A0FEC9F025ED7E85005FBBA3 /* SceneDelegate.swift in Sources */,
 				A09198F625EDBDBA002E0378 /* ViewControllerConfirm.swift in Sources */,
 			);

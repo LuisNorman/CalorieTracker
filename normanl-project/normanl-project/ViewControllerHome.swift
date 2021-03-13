@@ -21,7 +21,7 @@ class ViewControllerHome: UIViewController {
         completeButton.backgroundColor = .clear
         completeButton.layer.cornerRadius = 5
         completeButton.layer.borderWidth = 1
-        completeButton.layer.borderColor = UIColor.black.cgColor // Use CG api
+        completeButton.layer.borderColor = UIColor.black.cgColor // CG api
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,9 +40,11 @@ class ViewControllerHome: UIViewController {
     // Add the completed day to array and reset values
     @IBAction func completePressed(_ sender: UIButton) {
         if (currentCalorieInt > 0) {
+            CompletedDays.add(calorieLabel.text!)
             completedDays.append(calorieLabel.text!)
             currentCalorieInt = 0
             calorieLabel.text = "0 calories"
+            incomingCalories = 0
         }
         else {
             invalidInput(_title: "No calories!", _message: "You must have at least 1 calorie in order to submit.")
@@ -59,6 +61,7 @@ class ViewControllerHome: UIViewController {
         alertController.addAction(cancelAction)
         present(alertController, animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 
