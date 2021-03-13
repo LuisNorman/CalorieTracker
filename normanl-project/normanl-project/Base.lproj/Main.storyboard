@@ -17,25 +17,28 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3v-OB-ENp">
-                                <rect key="frame" x="16" y="86" width="358" height="53"/>
+                                <rect key="frame" x="16" y="67" width="358" height="53"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZWy-YN-LJW">
-                                <rect key="frame" x="16" y="147" width="358" height="53"/>
+                                <rect key="frame" x="16" y="128" width="358" height="53"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvQ-t7-4e0">
-                                <rect key="frame" x="16" y="208" width="358" height="53"/>
+                                <rect key="frame" x="16" y="189" width="358" height="53"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="44"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QnT-BG-iVS">
-                                <rect key="frame" x="139" y="651" width="112" height="78"/>
+                                <rect key="frame" x="139" y="744" width="112" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="KIN-cC-fcS"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="55"/>
                                 <state key="normal" title="Start">
                                     <color key="titleColor" red="0.61568627450000002" green="1" blue="0.78583229809999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -49,12 +52,12 @@
                         <color key="backgroundColor" red="0.92156862745098034" green="0.78431372549019607" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZWy-YN-LJW" firstAttribute="top" secondItem="R3v-OB-ENp" secondAttribute="bottom" constant="8" symbolic="YES" id="1pV-am-kgI"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QnT-BG-iVS" secondAttribute="bottom" constant="81" id="6OH-hS-B91"/>
                             <constraint firstItem="cvQ-t7-4e0" firstAttribute="top" secondItem="ZWy-YN-LJW" secondAttribute="bottom" constant="8" symbolic="YES" id="Bdl-s3-DAf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QnT-BG-iVS" secondAttribute="bottom" constant="19" id="Gn3-XJ-bYP"/>
                             <constraint firstItem="ZWy-YN-LJW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Oc5-1F-FsZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QnT-BG-iVS" secondAttribute="trailing" constant="139" id="RFc-pG-wgg"/>
                             <constraint firstItem="QnT-BG-iVS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="139" id="VKR-EF-FSh"/>
-                            <constraint firstItem="R3v-OB-ENp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="42" id="YCC-Gt-EVj"/>
+                            <constraint firstItem="R3v-OB-ENp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="WGK-I9-ZoH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cvQ-t7-4e0" secondAttribute="trailing" constant="16" id="deU-EZ-MKv"/>
                             <constraint firstItem="cvQ-t7-4e0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="iqs-BC-cH1"/>
                             <constraint firstItem="R3v-OB-ENp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kQU-E3-OyC"/>
@@ -65,7 +68,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1011" y="89"/>
+            <point key="canvasLocation" x="-1012.3076923076923" y="88.862559241706151"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xxF-bQ-6fZ">
@@ -767,16 +770,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day 99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-e0-Enh">
-                                <rect key="frame" x="123" y="227" width="145" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day 99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7WP-e0-Enh">
+                                <rect key="frame" x="20" y="227" width="350" height="55"/>
                                 <fontDescription key="fontDescription" name="Optima-BoldItalic" family="Optima" pointSize="46"/>
                                 <color key="textColor" red="0.51028248623092975" green="0.7848397280615147" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-Ky-JVf">
-                                <rect key="frame" x="16" y="380" width="358" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ROv-Ky-JVf">
+                                <rect key="frame" x="16" y="325" width="358" height="28"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Total calories consumed">
                                         <attributes>
@@ -789,16 +790,14 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAF-PU-vS7">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calorina Tracker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QAF-PU-vS7">
                                 <rect key="frame" x="16" y="124" width="358" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="47"/>
                                 <color key="textColor" red="0.92156862750000001" green="0.7843137255" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slm-rI-qpt">
-                                <rect key="frame" x="16" y="429" width="358" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="slm-rI-qpt">
+                                <rect key="frame" x="16" y="374" width="358" height="43.333333333333314"/>
                                 <attributedString key="attributedText">
                                     <fragment content="9999 calories">
                                         <attributes>
@@ -810,28 +809,48 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Lorem ipsum text is great to use at times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS9-I3-okh">
-                                <rect key="frame" x="16" y="549" width="358" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum text is great to use at times" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dS9-I3-okh">
+                                <rect key="frame" x="16" y="493.33333333333331" width="358" height="24.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Charter-Roman" family="Charter" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Goal: 9999 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el8-gN-w6c">
-                                <rect key="frame" x="20" y="472" width="350" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal: 9999 " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="el8-gN-w6c">
+                                <rect key="frame" x="20" y="417" width="350" height="36.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Menlo-Italic" family="Menlo" pointSize="31"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.96999999999999997" translatesAutoresizingMaskIntoConstraints="NO" id="lUV-3I-Fr6">
-                                <rect key="frame" x="16" y="598" width="354" height="4"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="progressTintColor" red="0.1633869584" green="1" blue="0.152754853" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.96999999999999997" translatesAutoresizingMaskIntoConstraints="NO" id="lUV-3I-Fr6">
+                                <rect key="frame" x="16" y="526" width="358" height="4"/>
+                                <color key="progressTintColor" systemColor="systemBlueColor"/>
                             </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="YnC-KQ-na9"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QAF-PU-vS7" firstAttribute="top" secondItem="YnC-KQ-na9" secondAttribute="top" constant="124" id="7qs-hx-MkR"/>
+                            <constraint firstItem="ROv-Ky-JVf" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="16" id="CQR-qR-3lY"/>
+                            <constraint firstItem="lUV-3I-Fr6" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="16" id="Fca-E3-6Gu"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="el8-gN-w6c" secondAttribute="trailing" constant="20" id="IXZ-hL-Ucc"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="lUV-3I-Fr6" secondAttribute="trailing" constant="16" id="Idh-Sh-hN4"/>
+                            <constraint firstItem="ROv-Ky-JVf" firstAttribute="top" secondItem="7WP-e0-Enh" secondAttribute="bottom" constant="43" id="IfM-UC-WOD"/>
+                            <constraint firstItem="slm-rI-qpt" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="16" id="JCb-wH-tK3"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="slm-rI-qpt" secondAttribute="trailing" constant="16" id="KFG-Hh-DGo"/>
+                            <constraint firstItem="7WP-e0-Enh" firstAttribute="top" secondItem="QAF-PU-vS7" secondAttribute="bottom" constant="47" id="L3k-Zb-dgp"/>
+                            <constraint firstItem="el8-gN-w6c" firstAttribute="top" secondItem="ROv-Ky-JVf" secondAttribute="bottom" constant="64" id="O0h-FW-3hH"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="dS9-I3-okh" secondAttribute="trailing" constant="16" id="PYM-Fq-JKF"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="QAF-PU-vS7" secondAttribute="trailing" constant="16" id="QVo-5x-nMb"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="ROv-Ky-JVf" secondAttribute="trailing" constant="16" id="RSy-Yo-4I6"/>
+                            <constraint firstItem="el8-gN-w6c" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="20" id="Wjw-af-PiD"/>
+                            <constraint firstItem="YnC-KQ-na9" firstAttribute="trailing" secondItem="7WP-e0-Enh" secondAttribute="trailing" constant="20" id="m4K-pa-ZAg"/>
+                            <constraint firstItem="dS9-I3-okh" firstAttribute="top" secondItem="el8-gN-w6c" secondAttribute="bottom" constant="40" id="pvC-NI-pcH"/>
+                            <constraint firstItem="7WP-e0-Enh" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="20" id="qDG-Zl-E5A"/>
+                            <constraint firstItem="dS9-I3-okh" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="16" id="rLw-hQ-e1S"/>
+                            <constraint firstItem="slm-rI-qpt" firstAttribute="top" secondItem="ROv-Ky-JVf" secondAttribute="bottom" constant="21" id="s9H-CO-RVx"/>
+                            <constraint firstItem="QAF-PU-vS7" firstAttribute="leading" secondItem="YnC-KQ-na9" secondAttribute="leading" constant="16" id="uzy-U8-znS"/>
+                            <constraint firstItem="lUV-3I-Fr6" firstAttribute="top" secondItem="dS9-I3-okh" secondAttribute="bottom" constant="8" symbolic="YES" id="yuZ-7h-qqj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Details" id="xXY-bb-fWU"/>
                     <connections>
@@ -1090,6 +1109,9 @@
         <image name="tray.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGrayColor">
             <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

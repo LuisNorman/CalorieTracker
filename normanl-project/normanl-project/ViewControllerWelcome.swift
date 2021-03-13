@@ -18,7 +18,7 @@ class ViewControllerWelcome: UIViewController {
        
         let w = view.bounds.width - 100
         let h = view.bounds.height - 500
-        container.frame = CGRect(x: 50, y: 300, width: w, height: h)
+        container.frame = CGRect(x: 50, y: 350, width: w, height: h)
         view.addSubview(container)
         
         apples.frame = CGRect(x: 0, y: 0, width: w, height: h)
