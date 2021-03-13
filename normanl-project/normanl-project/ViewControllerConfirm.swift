@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewControllerConfirm: UIViewController {
 
@@ -28,7 +29,6 @@ class ViewControllerConfirm: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -40,6 +40,9 @@ class ViewControllerConfirm: UIViewController {
             heightLabel.text = "Height: \(height ?? "Unknown")"
             weightLabel.text = "Weight: \(weight ?? "Unknown")"
         }
+        
+        
+        
     }
     
     @IBAction func recommendationSelected(_ sender: UIButton) {
